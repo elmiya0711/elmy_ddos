@@ -1,7 +1,7 @@
 package main
 
 /*
- NAM DoS tool GOLANG
+ ELMY DoS tool GOLANG
 */
 
 import (
@@ -87,7 +87,7 @@ func main() {
 	flag.Var(&headers, "header", "Add headers to the request. Could be used multiple times")
 	flag.Parse()
 
-	t := os.Getenv("NAMDoSMAXPROCS")
+	t := os.Getenv("ELMYDDoSMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
 		maxproc = 4096
@@ -100,7 +100,7 @@ func main() {
 	}
 
 	if version {
-		fmt.Println("NAMDoS", __version__)
+		fmt.Println("ELMYDDoS", __version__)
 		os.Exit(0)
 	}
 
@@ -120,7 +120,7 @@ func main() {
 	}
 
 	go func() {
-		fmt.Println("-- NAMDOS ATTACK STARTED! --\n           Go!\n\n")
+		fmt.Println("-- ELMYDDOS ATTACK STARTING! --\n           Go!\n\n")
 		ss := make(chan uint8, 8)
 		var (
 			err, sent int32
@@ -145,7 +145,7 @@ func main() {
 			case targetComplete:
 				sent++
 				fmt.Printf("\r%-6d of max %-6d |\t%7d |\t%6d", cur, maxproc, sent, err)
-				fmt.Println("\r-- NAMDoS Attack Finished --       \n\n\r")
+				fmt.Println("\r-- ELMYDDoS Attack Finished --       \n\n\r")
 				os.Exit(0)
 			}
 		}
