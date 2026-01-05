@@ -1,7 +1,7 @@
 package main
 
 /*
- ELMY DoS tool GOLANG
+ ELMY DDoS tool GOLANG
 */
 
 import (
