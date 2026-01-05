@@ -1,23 +1,10 @@
-![Screenshot_20230308-221713](https://user-images.githubusercontent.com/98259155/225797849-45cb3dc6-f3fa-45eb-abfd-92db50816d8f.jpg)
 
 
-# NamDoS
+# ELMYDDoS
 
-⚠️Tool DoS very strong make the website maybe die!!
+Tool DoS in golang
 
-🖥️This tool is written in Golang programming language!
-
-💪Very Strong!
-
-👍Very easy to use!
-
-🔥NO LAG!
-
-🚴Speed DoS Max 4096!
-
-📱FOR TERMUX!
-
-# INSTALLATION (CÀI ĐẶT📥):
+# INSTALLATION 
 ```shell script
 pkg install golang
 apt install git
